@@ -1,0 +1,7 @@
+![image](https://github.com/krishnageethika/certified-kubernetes-administrator-course/assets/39904929/20f5111f-991f-4cd5-9e40-b29f9005427f)
+
+
+
+Say for example, there are hundreds of pods running a front end application and hundreds of pods running a backend application or a database.
+It will be difficult for you to group these pods once they're deployed.
+If you label them now as front end, backend or database, you will be able to filter the pods based on this label at a later point in time.
