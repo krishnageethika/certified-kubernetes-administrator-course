@@ -109,6 +109,7 @@ In this section, we will take a look at the below
     
 ## Labels and Selectors
 #### What is the deal with Labels and Selectors? Why do we label pods and objects in kubernetes?
+- There could be hundreds of other pods in the cluster running different applications. This is where labelling of our pods during creation comes in handy. We can now provide these labels as a filter of Replica Set. Under the Selector section we use matchLabels filter and provide the same label that we used while creating the pods. This way the Relicaset knows which pods to monitor. Same concept of Labels and Selectors is used through out the K8's. 
 
   ![labels](../../images/labels.PNG)
   
