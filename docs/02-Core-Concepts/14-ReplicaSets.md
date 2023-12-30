@@ -152,6 +152,7 @@ In this section, we will take a look at the below
   ```
   $ kubectl scale --replicas=6 replicaset myapp-replicaset
   ```
+-- However remember that using the filename as input will not result in the number of replicas being updated automatically in the file. In other words the number of Relicas in Replica set's  defination file will still be three even though you scaled your Replica Set to have 6 replicas using the kube control scale command and the file as input. There are also other options available for automatically scaling the Replica set based on load which will discuss further.
   ![rs2](../../images/rs2.PNG)
 
 #### K8s Reference Docs:
