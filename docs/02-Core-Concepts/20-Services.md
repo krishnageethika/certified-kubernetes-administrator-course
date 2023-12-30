@@ -21,7 +21,9 @@ In this section we will take a look at **`services`** in kubernetes
   - From outside world (This should be our expectation, without something in the middle it will not reach the application)
   
     ![srv3](../../images/srv3.PNG)
-   
+
+   - So we need something in the middle to help us map requests to the node from our laptop. Through the node, to the pod running the web container. This is where k8's Service comes into play. The K8's service is an object just like pods, replica sets, deployments.
+   - One of its usecase is to listen to the port on the node and forward request on that port to a port on the pod running the web application. Nodeport: because the service listens to a port on the node and forward requests to the pod.
     
  ## Service Types
  
