@@ -89,6 +89,8 @@ In this section, we will take a look at the below
         type: front-end
  ```
 #### ReplicaSet requires a selector definition when compare to Replication Controller.
+
+- We would have to specify which pods fall under it, if we have provided the contents of the pod defination file itself in the template because replica set can also manage pods that were not created as part of the replica set creation. Example the pods that were created before the  reation of replica set that match labels specified in the selector, the replica set will also take those pods into consideration while creating the replicas.
    
   - To Create the replicaset
     ```
