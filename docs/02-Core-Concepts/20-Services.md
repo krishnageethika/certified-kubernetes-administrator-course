@@ -84,13 +84,15 @@ In this section we will take a look at **`services`** in kubernetes
       ![srvnp2](../../images/srvnp2.PNG)
 
       #### A service with multiple pods
-      
+-- To balance load accross three nodes it uses random algorith
+
       ![srvnp3](../../images/srvnp3.PNG)
       
       #### When Pods are distributed across multiple nodes
      
       ![srvnp4](../../images/srvnp4.PNG)
-     
+
+     -- When we create a service, without us having to do any additional configuration k8's automatically creates a service that spans across all the nodes in the cluster and maps the target port to the same node port on all the nodes in the cluster. This way you can access the application using the IP of any node in the cluster and using the same port number which in this case is 30008.  
             
  1. ClusterIP
     - In this case the service creates a **`Virtual IP`** inside the cluster to enable communication between different services such as a set of frontend servers to a set of backend servers.
